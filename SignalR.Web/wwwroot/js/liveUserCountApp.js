@@ -5,13 +5,16 @@ const connectionBuilder = new signalR.HubConnectionBuilder()
 
 //Make a call the hub
 connectionBuilder.on("updatePageViews",
-    value => {
-        document.querySelector("#display-live-count").innerText = value.toString();
+    (count, date) => {
+
+        document.querySelector("#display-live-count").innerText = count.toString();
+        document.querySelector("#display-live-count-date").innerText = formatDate(date);
     });
 
 connectionBuilder.on("updatePageUsers",
-    value => {
-        document.querySelector("#display-live-users-count").innerText = value.toString();
+    (count, date) => {
+        document.querySelector("#display-live-users-count").innerText = count.toString();
+        document.querySelector("#display-live-users-count-date").innerText = formatDate(date);
     });
 
 //Send the client data to the hub
@@ -30,6 +33,13 @@ const onFulfill = () => {
 
 const onReject = () => {
     console.log("Connection has not been established (rejected)");
+}
+
+const formatDate = (date) => {
+
+    const parsedDate = new Date(Date.parse(date));
+
+    return `${parsedDate}`;
 }
 
 //Establish the connection
