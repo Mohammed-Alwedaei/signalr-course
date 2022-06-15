@@ -4,7 +4,7 @@
 
 These are the inteded/expected learning objectives to be gained by the end of the course
 
-- Implement a real-time communication in ASP.NET application using SignalR course
+- Implement a real-time communication in ASP.NET application using SignalR
 - Get to know the transport types in SignalR
 - Implement SignalR alongside with Identity user
 - Limit actions to a specific group of users
