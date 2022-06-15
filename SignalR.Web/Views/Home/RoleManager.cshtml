@@ -1,51 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Current Page Count";
-}
-
-<!--Display current page views-->
-<section class="[ container ]">
-    <div class="[ row ] [ align-items-center mx-auto ]">
-        <div class="[ col-lg-6 ]">
-            <h1 class="[ text-secondary d-inline ]">
-                Current
-                <span class="[ text-warning ]">
-                    page
-                </span>
-                views:
-            </h1>
-
-            <div class="[ shadow-lg rounded-3 d-flex align-items-center justify-content-center mt-3 flex-column mt-4 ]" style="width: 300px; height: 300px;">
-                <h2 id="display-live-count" class="[ display-1 text-success ]"></h2>
-            </div>
-        </div>
-
-        <div class="[ col-lg-6 ]">
-            <h1 class="[ text-secondary d-inline]">
-                Current
-                <span class="[ text-warning ]">
-                    users
-                </span>
-                views:
-            </h1>
-
-            <div class="[ shadow-lg rounded-3 d-flex align-items-center justify-content-center mt-3 flex-column mt-4 ]" style="width: 300px; height: 300px;">
-                <h2 id="display-live-users-count" class="[ display-1 text-success ]"></h2>
-            </div>
-        </div>
-    </div>
-
-    <div class="[ row mt-4 ]">
-        <div class="[ col-lg-12 ]">
-            <h2 class="text-secondary">
-                <span class="[ fw-lighter ]">Last</span>
-                <span class="[ text-info fw-bolder ]">Updated</span>
-            </h2>
-            <h2 id="display-live-count-date" class="[ text-secondary ]"></h2>
-        </div>
-    </div>
-</section>
-<!--Display current page views-->
-
+﻿
 
 <!--Display Roles-->
 <section class="[ container ]">
@@ -101,6 +54,5 @@
 
 @section Scripts {
     <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
-    <script src="~/js/liveUserCountApp.js"></script>
     <script src="~/js/roleSystem.js"></script>
 }
