@@ -49,6 +49,15 @@ namespace SignalR.Web.Controllers
             return View();
         }
 
+        #region Groups
+
+        public ActionResult Tenants()
+        {
+            return View();
+        }
+
+        #endregion
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

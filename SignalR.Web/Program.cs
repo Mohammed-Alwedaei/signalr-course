@@ -46,5 +46,6 @@ app.MapRazorPages();
 
 app.MapHub<UserHub>("/Hubs/UserCount");
 app.MapHub<RoleSystemHub>("/Hubs/RoleSystem");
+app.MapHub<TenantsHub>("/Hubs/Tenants");
 
 app.Run();
